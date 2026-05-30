@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen | Full-Stack Developer</title>
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="glass-card hero-card reveal">
+                <!-- Replace with your photo: <img src="your-photo.jpg" alt="Alex Chen" class="hero-avatar"> -->
+                <div class="hero-avatar-placeholder">
+                    AC
+                </div>
+                <h1>Alex Chen</h1>
+                <p class="hero-title">Full-Stack Developer & UI Architect</p>
+                <div class="hero-tagline">
+                    <span id="typed-text"></span><span class="cursor"></span>
+                </div>
+                <div class="hero-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Email"><i class="far fa-envelope"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects">
+        <div class="container">
+            <span class="section-label reveal">// Portfolio</span>
+            <h2 class="reveal">Selected Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="glass-card project-card reveal">
+                    <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+                    <h3>WeatherLens</h3>
+                    <p>A real-time weather dashboard with geolocation, interactive maps, and 7-day forecasts. Built with a focus on performance and accessibility.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">OpenWeather API</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card reveal">
+                    <div class="project-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>TaskFlow</h3>
+                    <p>A Kanban-style project management tool with drag-and-drop, real-time collaboration, and automated workflows.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card project-card reveal">
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    <h3>DeepSight AI</h3>
+                    <p>An image classification microservice using a pre-trained model, served via REST API with a minimal Svelte frontend.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Svelte</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about">
+        <div class="container">
+            <span class="section-label reveal">// About</span>
+            <h2 class="reveal">Get To Know Me</h2>
+            <div class="about-grid">
+                
+                <!-- Bio Card -->
+                <div class="glass-card about-card reveal">
+                    <p>
+                        I'm a full-stack developer with 5+ years of experience crafting digital products 
+                        that balance technical excellence with thoughtful design. Currently based in 
+                        Vancouver, BC, I specialize in building performant web applications using modern 
+                        JavaScript frameworks and cloud-native architectures.
+                    </p>
+                    <p>
+                        When I'm not shipping code, you'll find me contributing to open-source projects, 
+                        writing technical articles, or exploring the Pacific Northwest trails.
+                    </p>
+                    <button class="btn-resume" onclick="alert('Resume download would go here!')">
+                        <i class="fas fa-download"></i> Download Résumé
+                    </button>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="glass-card skills-card reveal">
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">TypeScript</span>
+                    <span class="skill-pill">React</span>
+                    <span class="skill-pill">Vue.js</span>
+                    <span class="skill-pill">Node.js</span>
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">PostgreSQL</span>
+                    <span class="skill-pill">MongoDB</span>
+                    <span class="skill-pill">AWS</span>
+                    <span class="skill-pill">Docker</span>
+                    <span class="skill-pill">GraphQL</span>
+                    <span class="skill-pill">REST APIs</span>
+                    <span class="skill-pill">Git</span>
+                    <span class="skill-pill">Figma</span>
+                    <span class="skill-pill">Tailwind CSS</span>
+                    <span class="skill-pill">CI/CD</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER / CONTACT ========== -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-links reveal">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Email"><i class="far fa-envelope"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <p class="reveal">&copy; 2026 Alex Chen. Crafted with vanilla HTML, CSS & JS.</p>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // ===== SCROLL REVEAL (Intersection Observer) =====
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ===== ACTIVE NAV LINK ON SCROLL =====
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-list a');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const currentId = entry.target.id;
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${currentId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, {
+            threshold: 0.4,
+            rootMargin: '-80px 0px -40px 0px'
+        });
+
+        sections.forEach(section => navObserver.observe(section));
+
+        // ===== TYPING EFFECT =====
+        const typedTextEl = document.getElementById('typed-text');
+        const phrases = [
+            'Building pixel-perfect interfaces...',
+            'Solving complex problems...',
+            'Writing clean, scalable code...',
+            'Open to new opportunities.'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 80;
+
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typedTextEl.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 40;
+            } else {
+                typedTextEl.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 80;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 400;
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        // Start typing effect
+        setTimeout(typeEffect, 600);
+    </script>
+</body>
+</html>
